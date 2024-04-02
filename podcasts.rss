@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Manish's Podcast</title>
+    <itunes:owner>
+        <itunes:email>manishrestha529@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:author>Manish</itunes:author>
+    <description>A bot for Sharemarket update.</description>
+    <itunes:image href="https://themanish.github.io/podcasts/bot.png"/>
+    <language>en-us</language>
+    <link>https://themanish.github.io/podcasts/</link>
+    <item>
+      <title>First MP3</title>
+      <description>First mp3 of bot podcast.</description>
+      <pubDate>Tue, 2 Apr 2024 22:27:00 GMT</pubDate>
+      <enclosure url="https://themanish.github.io/podcasts/mp3/ttsMP3.com_VoiceText_2024-4-2_22-20-41.mp3"
+                 type="audio/mpeg" length="55000"/>
+      <itunes:duration>00:02</itunes:duration>
+      <guid isPermaLink="false">ttsMP3.com_VoiceText_2024-4-2_22-20-41.mp3</guid>
+    </item>
+  </channel>
+</rss>
