@@ -16,7 +16,7 @@
     <item>
       <title>Podcast - {{ podcast.date }}</title>
       <description>Stock market update for {{podcast.date}}.</description>
-      <pubDate>{{date}}</pubDate>
+      <pubDate>{{podcast.date}}</pubDate>
       <enclosure url="https://themanish.github.io/podcasts/mp3/{{podcast.date}}.mp3"
                  type="audio/mpeg" length="{{ podcast.size }}"/>
       <guid isPermaLink="false">{{podcast.date}}.mp3</guid>
