@@ -12,15 +12,15 @@
     <language>en-us</language>
     <link>https://themanish.github.io/podcasts/</link>
 
-    
+    {% for podcast in podcasts %}
     <item>
-      <title>Podcast - 2024-04-03</title>
-      <description>Stock market update for 2024-04-03.</description>
-      <pubDate></pubDate>
-      <enclosure url="https://themanish.github.io/podcasts/mp3/2024-04-03.mp3"
-                 type="audio/mpeg" length="46368"/>
-      <guid isPermaLink="false">2024-04-03.mp3</guid>
+      <title>Podcast - {{ podcast.date }}</title>
+      <description>Stock market update for {{podcast.date}}.</description>
+      <pubDate>{{date}}</pubDate>
+      <enclosure url="https://themanish.github.io/podcasts/mp3/{{podcast.date}}.mp3"
+                 type="audio/mpeg" length="{{ podcast.size }}"/>
+      <guid isPermaLink="false">{{podcast.date}}.mp3</guid>
     </item>
-    
+    {% endfor %}
   </channel>
 </rss>
