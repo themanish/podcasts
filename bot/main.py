@@ -28,6 +28,7 @@ with open('../local_storage.json', 'r') as file:
 podcasts = json.loads(json_data)
 podcasts.append({
     'title': date,
+    'filename': f"{date}.mp3",
     'datetime': str(datetime.datetime.now().strftime("%A, %d %b %Y %H:%M GMT")), 
     'size': os.stat(f"../mp3/{date}.mp3").st_size
 })
