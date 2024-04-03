@@ -20,5 +20,14 @@
       <itunes:duration>00:02</itunes:duration>
       <guid isPermaLink="false">ttsMP3.com_VoiceText_2024-4-2_22-20-41.mp3</guid>
     </item>
+    <item>
+      <title>First MP3 - Copy</title>
+      <description>First mp3 of bot podcast.</description>
+      <pubDate>Tue, 3 Apr 2024 01:39:00 GMT</pubDate>
+      <enclosure url="https://themanish.github.io/podcasts/mp3/ttsMP3.com_VoiceText_2024-4-2_22-20-41.mp3"
+                 type="audio/mpeg" length="55000"/>
+      <itunes:duration>00:02</itunes:duration>
+      <guid isPermaLink="false">ttsMP3.com_VoiceText_2024-4-2_22-20-41-copy.mp3</guid>
+    </item>
   </channel>
 </rss>
