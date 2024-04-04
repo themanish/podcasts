@@ -7,7 +7,9 @@ import json
 
 tickers = yf.Tickers("^GSPC, ^FTSE")
 
-script=""
+# build tele-script
+date=str(datetime.datetime.now().strftime("%A, %d %b"))
+script="As of {date}, "
 
 for index, ticker in tickers.tickers.items():
     longName=ticker.info.get('longName')
@@ -18,6 +20,7 @@ for index, ticker in tickers.tickers.items():
 
     script += f"The {longName} is {status} by {percentChange} percent."
 
+# generate mp3
 date=str(datetime.datetime.now().strftime("%Y-%m-%d-%H-%M"))
 gTTS(text=script, lang='en').save(f"../mp3/{date}.mp3")
 
