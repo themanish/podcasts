@@ -5,7 +5,7 @@ from jinja2 import Environment, FileSystemLoader
 import os
 import json
 
-tickers = yf.Tickers("^GSPC, ^FTSE")
+tickers = yf.Tickers("^GSPC, ^FTSE", "BTC-USD", "SOL-USD")
 
 # build tele-script
 date=str(datetime.datetime.now().strftime("%A, %d %b"))
