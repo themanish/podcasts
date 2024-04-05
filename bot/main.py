@@ -4,25 +4,36 @@ import datetime
 from jinja2 import Environment, FileSystemLoader
 import os
 import json
+import sys
+import pprint
+from GoogleNews import GoogleNews
 
-tickers = yf.Tickers("^GSPC, ^FTSE", "BTC-USD", "SOL-USD")
+
+tickers = yf.Tickers("^GSPC, ^FTSE, BTC-USD, SOL-USD")
 
 # build tele-script
 date=str(datetime.datetime.now().strftime("%A, %d %b"))
-script="As of {date}, "
+script=f"As of {date}, "
 
 for index, ticker in tickers.tickers.items():
     longName=ticker.info.get('longName')
-    hist=ticker.history(period="2d")
+    hist=ticker.history(period="3d")
 
     percentChange=round(hist['Close'].pct_change().values[1]*100, 2)
     status = 'up' if percentChange > 0 else 'down'
 
-    script += f"The {longName} is {status} by {percentChange} percent."
+    script += f"The {longName} is {status} by {percentChange} percent. "
+    
+    try:
+        googlenews = GoogleNews(period='1d')
+        googlenews.search(longName)
+        script += f"{googlenews.result()[0]['desc']}. "
+    except Exception as e:
+        print('Error: ', str(e))
 
 # generate mp3
 date=str(datetime.datetime.now().strftime("%Y-%m-%d-%H-%M"))
-gTTS(text=script, lang='en').save(f"../mp3/{date}.mp3")
+gTTS(text=script, lang='en', slow=False).save(f"../mp3/{date}.mp3")
 
 # update storage
 with open('../local_storage.json', 'r') as file:
