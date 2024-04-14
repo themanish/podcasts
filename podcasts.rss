@@ -121,5 +121,14 @@
       <guid isPermaLink="false">2024-04-13-00-49.mp3</guid>
     </item>
     
+    <item>
+      <title>Podcast - 2024-04-14-01-22</title>
+      <description>Stock market update for 2024-04-14-01-22.</description>
+      <pubDate>Sunday, 14 Apr 2024 01:22 GMT</pubDate>
+      <enclosure url="https://themanish.github.io/podcasts/mp3/2024-04-14-01-22.mp3"
+                 type="audio/mpeg" length="328512"/>
+      <guid isPermaLink="false">2024-04-14-01-22.mp3</guid>
+    </item>
+    
   </channel>
 </rss>
