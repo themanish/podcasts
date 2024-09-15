@@ -1489,5 +1489,14 @@
       <guid isPermaLink="false">2024-09-14-01-11.mp3</guid>
     </item>
     
+    <item>
+      <title>Podcast - 2024-09-15-01-20</title>
+      <description>Stock market update for 2024-09-15-01-20.</description>
+      <pubDate>Sunday, 15 Sep 2024 01:20 GMT</pubDate>
+      <enclosure url="https://themanish.github.io/podcasts/mp3/2024-09-15-01-20.mp3"
+                 type="audio/mpeg" length="527808"/>
+      <guid isPermaLink="false">2024-09-15-01-20.mp3</guid>
+    </item>
+    
   </channel>
 </rss>
