@@ -2623,5 +2623,14 @@
       <guid isPermaLink="false">2025-01-21-01-14.mp3</guid>
     </item>
     
+    <item>
+      <title>Podcast - 2025-01-22-01-16</title>
+      <description>Stock market update for 2025-01-22-01-16.</description>
+      <pubDate>Wednesday, 22 Jan 2025 01:16 GMT</pubDate>
+      <enclosure url="https://themanish.github.io/podcasts/mp3/2025-01-22-01-16.mp3"
+                 type="audio/mpeg" length="557568"/>
+      <guid isPermaLink="false">2025-01-22-01-16.mp3</guid>
+    </item>
+    
   </channel>
 </rss>
